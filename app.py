@@ -8,11 +8,6 @@ def index():
     return "hello world test test test"
 
 
-@app.route('/sample-video')
-def video():
-    return render_template('index.html')
-
-
 @app.route('/computer-vision', methods=['POST'])
 def computer_vision():
     search_img = request.args.get("image")
